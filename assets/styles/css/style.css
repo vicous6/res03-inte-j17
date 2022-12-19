@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body > header {
+  color: white;
+  background-color: #272640;
+  height: 19vh;
+}
+body > header > figure {
+  padding-top: 0.5rem;
+  width: 7vh;
+  margin: auto;
+  height: 50%;
+}
+body > header > figure > img {
+  width: 100%;
+}
+body > header > h1 {
+  height: 20%;
+  text-align: center;
+}
+body > header > ul {
+  height: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+body > header > ul > li:nth-of-type(1) {
+  grid-column: 2/3;
+}
+body > header > ul > li {
+  justify-self: center;
+}
+body #sec1 {
+  color: white;
+  background: linear-gradient(to bottom, rgba(27, 58, 75, 0.9), rgba(39, 38, 64, 0.9), rgba(77, 25, 77, 0.9)), url("../../img/cemetery.jpeg");
+  height: 80vh;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 2.5fr 1fr 1fr;
+}
+body #sec1 > figure {
+  justify-self: center;
+  align-self: center;
+}
+body #sec1 > figure > img {
+  width: 30vh;
+}
+body #sec1 > h2 {
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+body #sec1 > h3 {
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+body section:nth-of-type(2) {
+  margin: auto;
+  height: 115vh;
+  background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+  color: white;
+  display: grid;
+  grid-template-rows: 0.8fr 4fr;
+}
+body section:nth-of-type(2) > h3 {
+  justify-self: center;
+  align-self: center;
+  font-size: 3rem;
+}
+body section:nth-of-type(2) > #article-list {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+body section:nth-of-type(2) > #article-list > article {
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 2fr;
+  height: 28vh;
+}
+body section:nth-of-type(2) > #article-list > article > figure {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+body section:nth-of-type(2) > #article-list > article > figure > img {
+  width: 35%;
+  justify-self: center;
+}
+body section:nth-of-type(2) > #article-list > article > h4 {
+  padding-bottom: 1rem;
+  justify-self: center;
+}
+body section:nth-of-type(2) > #article-list > article > h5 {
+  padding-bottom: 1rem;
+  justify-self: center;
+}
+body > #price {
+  color: white;
+  background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+  height: 65vh;
+}
+body > #price > h3 {
+  height: 6vh;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 6rem;
+}
+body > #price > ul {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+body > #price > ul > li > article > h4 {
+  padding-bottom: 1rem;
+}
+body > #price > ul > li > article > p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+body > #price > ul > li > article > p:nth-of-type(2) {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+}
+body > #logo {
+  background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+body > #logo > figure {
+  width: 15vh;
+}
+body > #logo > figure > img {
+  width: 100%;
+}
+body > #contact {
+  height: 20vh;
+  background: linear-gradient(to bottom, rgb(77, 25, 77), rgb(39, 38, 64), rgb(27, 58, 75));
+}
+body > #contact > h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  height: 20%;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+body > #contact > ul {
+  height: 80%;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

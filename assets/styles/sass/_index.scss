@@ -1,0 +1,188 @@
+body {
+    &>header {
+        color: white;
+        background-color: #272640;
+        height: 19vh;
+        &>figure {
+            padding-top: 0.5rem;
+            width: 7vh;
+            margin: auto;
+            height: 50%;
+            &>img {
+                width: 100%;
+            }
+
+        }
+        &>h1 {
+            height: 20%;
+            text-align: center;
+        }
+        &>ul {
+            height: 30%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            &>li:nth-of-type(1) {
+                grid-column: 2/3;
+            }
+            &>li {
+                justify-self: center;
+            }
+        }
+
+    }
+    #sec1 {
+        color: white; // background-image:$background-gradient;
+        background: $background-gradient, url("../../img/cemetery.jpeg");
+
+        height: 80vh;
+        background-size: cover;
+        display: grid;
+        grid-template-rows: 2.5fr 1fr 1fr;
+
+        &>figure {
+            justify-self: center;
+            align-self: center;
+            &>img {
+                width: 30vh;
+            }
+        }
+        &>h2 {
+            justify-self: center;
+            align-self: center;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        &>h3 {
+            justify-self: center;
+            align-self: center;
+            font-size: 2rem;
+        }
+    }
+    section:nth-of-type(2) {
+
+        margin: auto;
+        height: 115vh;
+        background: $background-gradient2;
+        color: white;
+        display: grid;
+        grid-template-rows: 0.8fr 4fr;
+
+
+        &>h3 {
+
+            justify-self: center;
+            align-self: center;
+            font-size: 3rem;
+        }
+
+        &>#article-list {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            &>article {
+
+                display: grid;
+                grid-template-rows: 0.5fr 2fr 2fr;
+                height: 28vh;
+                &>figure {
+
+                    padding-bottom: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    &>img {
+                        width: 35%;
+                        justify-self: center;
+                    }
+                }
+                &>h4 {
+                    padding-bottom: 1rem;
+                    justify-self: center;
+                }
+                &>h5 {
+                    padding-bottom: 1rem;
+                    justify-self: center;
+                }
+                &>p {}
+            }
+        }
+    }
+    &>#price {
+        color:white;
+        background: $background-gradient2;
+        height:65vh;
+        &>h3 {
+            height:6vh;
+            font-size:2rem;
+            text-align:center;
+            padding-bottom:2rem;
+            padding-top:6rem;
+        }
+        &>ul {
+            width:70%;
+            margin:0 auto;
+            display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+            &>li {
+                &>article {
+                    &>h4 {
+                        padding-bottom:1rem;
+                    }
+                    &>p:nth-of-type(1) {
+                        font-size:2rem;
+                        font-weight:bold;
+                         padding-bottom:0.5rem;
+                    }
+                    &>p:nth-of-type(2) {
+                         font-size:1rem;
+                          padding-bottom:1rem;
+                         padding-left:0.5rem; 
+                    font-size:0.7rem;
+                    }
+                }
+            }
+        }
+
+    }
+    &>#logo {
+        background: $background-gradient2;
+        display:flex;
+            justify-content:center;
+            align-items:center;
+        height:30vh;
+        &>figure{
+            width:15vh;
+            
+            &>img{width:100%}
+        }
+        
+    }
+    &>#contact {
+       
+        height:20vh;
+             background: $background-gradient2;
+             &>h3{
+                 font-size:2rem;
+                 text-align:center;
+                  color:white;
+                  height:20%;
+                  padding-top:1rem;
+                  font-weight:bold;
+             }
+             &>ul{
+                 height:80%;
+                 display:flex;
+                 width:70%;
+                 margin:0 auto;
+                 &>li{
+                     &>a{
+                         &>span{
+                            
+                         }
+                     }
+                 }
+             }
+    }
+}
